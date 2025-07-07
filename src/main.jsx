@@ -2,11 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import ProductTable from './Api-Calling.jsx'
 import { Auth0Provider } from '@auth0/auth0-react'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <Auth0Provider  
+  {/* <Auth0Provider  
     domain="dev-2hk2cv0hmxg1uuep.us.auth0.com"
     clientId="hCftHOzvNoamTXMPjwcHuyZEYGDx7wEV"
     authorizationParams={{
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
     }}
   >
     <App />
-    </Auth0Provider>
+    </Auth0Provider> */}
+    <ProductTable/>
   </StrictMode>,
 )
